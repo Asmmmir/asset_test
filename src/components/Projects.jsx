@@ -20,9 +20,9 @@ const Projects = () => {
     </h1>
     <div className="container mx-auto flex flex-wrap justify-center gap-5">
 
-          {projects.map((item) => (
+          {projects.map((item,i) => (
 
-                  <Project title={item.title} subtitle={item.subtitle} audioFile={item.audioFile} />
+                  <Project key={i} title={item.title} subtitle={item.subtitle} audioFile={item.audioFile} />
           ))}
 
     </div>
