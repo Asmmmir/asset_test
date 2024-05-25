@@ -519,11 +519,20 @@ video {
 .h-full{
   height: 100%;
 }
+.h-\[300px\]{
+  height: 300px;
+}
+.h-\[\]{
+  height: ;
+}
 .w-\[445px\]{
   width: 445px;
 }
 .w-full{
   width: 100%;
+}
+.w-\[300px\]{
+  width: 300px;
 }
 .max-w-\[706px\]{
   max-width: 706px;

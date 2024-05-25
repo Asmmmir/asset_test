@@ -10,40 +10,23 @@ import "swiper/css";
 import "swiper/css/pagination";
 import "swiper/css/free-mode";
 
+
 const Projects = () => {
+
   return (
-    <div className="container mx-auto mt-10">
-      <Swiper
-        breakpoints={{
-          340: {
-            slidesPerView: 1,
-            spaceBetween: 15,
-          },
-          700: {
-            slidesPerView: 1,
-            spaceBetween: 15,
-          },
+    <div className="mt-10 w-full p-4">
+    <h1 className="text-title text-white text-center font-poppins max-md:text-[30px] font-bold mb-4">
+      Что я могу предложить?
+    </h1>
+    <div className="container mx-auto flex flex-wrap justify-center gap-5">
 
-          1024: {
-            slidesPerView: 2,
-            spaceBetween: 15
-          }
-        }}
-        freeMode={true}
-        pagination={{ clickable: true }}
-        modules={[FreeMode, Pagination]}
-        className="max-w-[90%] lg:max-w-[80%]"
-        
-      >
+          {projects.map((item) => (
 
-        {projects.map((item,i) => (
-          <SwiperSlide key={i}>
-            <Project title={item.title} subtitle={item.subtitle} audioFile={item.audioFile} />
-          </SwiperSlide>
-        ))}
+                  <Project title={item.title} subtitle={item.subtitle} audioFile={item.audioFile} />
+          ))}
 
-      </Swiper>
     </div>
+  </div>
   );
 };
 
