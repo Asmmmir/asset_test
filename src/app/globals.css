@@ -14,7 +14,7 @@ audio::-webkit-media-controls-panel {
     background-color: #FD6F00;
   }
 
-  ::-webkit-scrollbar {
+  /* ::-webkit-scrollbar {
     visibility: hidden;
-  }
+  } */
 

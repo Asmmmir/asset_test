@@ -1,9 +1,13 @@
+"use client";
+
 import React from 'react'
-import { Swiper, SwiperSlide } from "swiper/react";
-import { FreeMode, Pagination } from "swiper/modules";
 import "swiper/css";
 import "swiper/css/pagination";
 import "swiper/css/free-mode";
+import { FreeMode, Pagination } from "swiper/modules";
+import { Swiper, SwiperSlide } from "swiper/react";
+import { videoReviews } from '@/constants/videoReviews';
+
 
 const Reviews = () => {
   return (
@@ -28,9 +32,19 @@ const Reviews = () => {
       pagination={{ clickable: true }}
       modules={[FreeMode, Pagination]}
       className="max-w-[90%] lg:max-w-[80%]"
-      
     >
-
+              {
+                videoReviews.map((item) => (
+        
+                  <SwiperSlide
+                  
+                  > 
+                        <div className='bg-white '>
+                          1
+                        </div>
+                  </SwiperSlide>
+                ))
+              }
 
     </Swiper>
   </div>

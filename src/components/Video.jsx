@@ -32,7 +32,6 @@ const Video = ({ title, subtitle, videoUrl, thumbnail }) => {
             <div className="text-center font-poppins">
           <p className="text-lg font-bold text-primary">{title}</p>
           <p className="text-xl text-white">{subtitle}</p>
-
             </div>
         </div>
       )}
