@@ -2,7 +2,7 @@
 
 import React from "react";
 import Video from "./Video";
-import { videos } from "@/constants/video-projects";
+import  videos  from "@/constants/video-projects";
 
 const VideoProjects = () => {
 

@@ -1,4 +1,4 @@
-export const videos = [
+ const videos = [
     {
       title: "Zlataru",
       subtitle:
@@ -28,3 +28,6 @@ export const videos = [
       thumbnail: "images/work.png",
     },
   ];
+
+
+  export default videos

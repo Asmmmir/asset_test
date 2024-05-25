@@ -1,4 +1,4 @@
-export  const projects = [
+ const projects = [
     {
       title: "Записать песню с поздравлением для твоей девушки или жены",
       subtitle:
@@ -36,3 +36,6 @@ export  const projects = [
       audioFile: "audio1.mp3",
     },
   ];
+
+
+  export default projects

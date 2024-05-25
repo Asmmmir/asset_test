@@ -1,4 +1,4 @@
-export const videoReviews = [
+const videoReviews = [
   {
     videoUrl: "review-1.mp4",
     title: 'Review 1',
@@ -15,3 +15,5 @@ export const videoReviews = [
     subtitle: 'Description3'
   },
 ];
+
+export default videoReviews

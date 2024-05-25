@@ -6,7 +6,7 @@ import "swiper/css/pagination";
 import "swiper/css/free-mode";
 import { FreeMode, Pagination } from "swiper/modules";
 import { Swiper, SwiperSlide } from "swiper/react";
-import { videoReviews } from '@/constants/videoReviews';
+import  videoReviews  from '@/constants/videoReviews';
 
 
 const Reviews = () => {

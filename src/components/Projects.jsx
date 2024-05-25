@@ -2,7 +2,7 @@
 
 import React from "react";
 import Project from "./Project";
-import { projects } from "@/constants/projects";
+import  projects  from "@/constants/projects";
 
 const Projects = () => {
   return (
