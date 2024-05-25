@@ -5,7 +5,7 @@ import { FaTiktok, FaInstagram } from "react-icons/fa";
 
 const About = () => {
   return (
-    <div className="flex justify-between max-md:flex-col-reverse container mx-auto p-5 ">
+    <section className="flex justify-between max-md:flex-col-reverse container mx-auto p-5 ">
       <div className="max-w-[706px]">
         <h3 className="font-poppins text-[32px] text-white font-semibold">
           Меня зовут <span className="text-primary">Асет</span>
@@ -44,7 +44,7 @@ const About = () => {
           </ul>
         </div>
       </div>
-    </div>
+    </section>
   );
 };
 

@@ -29,7 +29,7 @@ const Application = () => {
     };
 
   return (
-    <div className="flex justify-between max-md:flex-col container mx-auto p-5 mt-20 gap-10">
+    <section className="flex justify-between max-md:flex-col container mx-auto p-5 mt-20 gap-10">
       <div className="flex justify-center items-center">
         <img src="/images/application-img.png" alt="application image" />
       </div>
@@ -49,7 +49,7 @@ const Application = () => {
           <button className="bg-primary font-poppins text-white text-[21px] font-bold rounded-[5px] p-5 mt-10" type="submit">Оставить заявку</button>
         </form>
       </div>
-    </div>
+    </section>
   );
 };
 

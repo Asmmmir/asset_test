@@ -17,10 +17,11 @@ export default function Home() {
       <Reviews />
       <FloatingWhatsApp 
         phoneNumber="+77089450349"
-        accountName="Акежан Елеуссизов"
+        accountName="Менеджер"
         avatar="/images/manager.jpg"
-        statusMessage="Обычно отвечает в течение 1 часа"
+        statusMessage="Отвечает в течение 1 часа"
         chatMessage="Привет! Напиши мне по поводу сотрудничества !"
+        
       />
     </main>
   );

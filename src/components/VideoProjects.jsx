@@ -7,7 +7,7 @@ import  videos  from "@/constants/video-projects";
 const VideoProjects = () => {
 
   return (
-    <div className="mt-10 w-full p-4">
+    <section className="mt-10 w-full p-4">
       <h1 className="text-title text-white text-center font-poppins max-md:text-[30px] font-bold mb-4">
         Примеры видеороликов
       </h1>
@@ -22,7 +22,7 @@ const VideoProjects = () => {
           />
         ))}
       </div>
-    </div>
+    </section>
   );
 };
 
