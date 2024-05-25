@@ -34,10 +34,10 @@ const Reviews = () => {
       className="max-w-[90%] lg:max-w-[80%]"
     >
               {
-                videoReviews.map((item) => (
+                videoReviews.map((item,i) => (
         
                   <SwiperSlide
-                  
+                  key={i}
                   > 
                         <div className='bg-white '>
                           1
