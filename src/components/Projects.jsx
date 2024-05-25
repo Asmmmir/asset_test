@@ -36,8 +36,8 @@ const Projects = () => {
         
       >
 
-        {projects.map((item) => (
-          <SwiperSlide>
+        {projects.map((item,i) => (
+          <SwiperSlide key={i}>
             <Project title={item.title} subtitle={item.subtitle} audioFile={item.audioFile} />
           </SwiperSlide>
         ))}
