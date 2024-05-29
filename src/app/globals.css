@@ -14,7 +14,36 @@ audio::-webkit-media-controls-panel {
     background-color: #FD6F00;
   }
 
+  
+
   /* ::-webkit-scrollbar {
     visibility: hidden;
   } */
+
+
+
+  .custom-pagination .swiper-pagination-bullet {
+    padding-block: 0.4em ;
+    padding-inline: 1.2em;
+    border-radius: 1em;
+    background-color: #D9D9D9; /* Оранжевый цвет */
+    opacity: 0.7;
+    transition: opacity 0.3s;
+    margin: 0 4px;
+}
+
+.custom-pagination .swiper-pagination-bullet-active {
+    opacity: 1;
+    background-color: #FD6F00
+}
+
+  .swiper-slide-next,
+  .swiper-slide-prev {
+      @apply opacity-50;
+  }
+  
+  .swiper-slide-active {
+      @apply opacity-100;
+  }
+  
 

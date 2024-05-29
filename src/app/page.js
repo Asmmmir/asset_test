@@ -21,7 +21,6 @@ export default function Home() {
         avatar="/images/manager.jpg"
         statusMessage="Отвечает в течение 1 часа"
         chatMessage="Привет! Напиши мне по поводу сотрудничества !"
-        
       />
     </main>
   );

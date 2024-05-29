@@ -10,6 +10,7 @@ const Projects = () => {
       <h1 className="text-title text-white text-center font-poppins max-md:text-[30px] font-bold mb-4">
         Что я могу предложить?
       </h1>
+      <p className="text-white text-subtitle text-center font-semibold font-poppins mb-4" >Музыкальные треки для вашего бизнеса</p>
       <div className="container mx-auto flex flex-wrap justify-center gap-5">
         {projects.map((item, i) => (
           <Project

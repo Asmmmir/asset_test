@@ -16,7 +16,8 @@ module.exports = {
         'primary': '#FD6F00'
       },
       fontSize: {
-        'title': '65px'
+        'title': '65px',
+        'subtitle': '21px',
       }
     }
   },
