@@ -33,12 +33,12 @@ const About = () => {
           <ul className="flex justify-center mt-3 gap-2">
             <li>
               <Link href="https://tiktok.com">
-                <FaTiktok color="white" size={40}/>
+                <FaTiktok color="white" size={40} className="tiktok"/>
               </Link>
             </li>
             <li>
               <Link href="https://instagram.com/assetyans">
-                <FaInstagram color="white" size={40} />
+                <FaInstagram color="white" size={40} className="instagram" />
               </Link>
             </li>
           </ul>
