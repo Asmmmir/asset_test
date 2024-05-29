@@ -46,12 +46,3 @@ audio::-webkit-media-controls-panel {
       @apply opacity-100;
   }
   
-
-.instagram:hover {
-  fill:#fa16ae
-}
-
-
-.tiktok:hover {
-  fill:#ff3b65
-}
