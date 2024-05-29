@@ -30,8 +30,8 @@ const Video = ({ title, subtitle, videoUrl, thumbnail }) => {
           onClick={() => setIsVideoOpen(true)}
         >
             <div className="text-center font-poppins">
-          <p className="text-lg font-bold text-primary">{title}</p>
-          <p className="text-xl text-white">{subtitle}</p>
+          <p className="text-3xl font-roboto font-semibold text-primary ">{title}</p>
+          <p className="text-xl font-roboto text-white">{subtitle}</p>
             </div>
         </div>
       )}

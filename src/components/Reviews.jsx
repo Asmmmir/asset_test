@@ -13,11 +13,11 @@ import Review from './Review';
 
     const Reviews = () => {
       return (
-        <div className="slider-container container mx-auto mt-10 p-5">
-                <h1 className="text-title text-white text-center font-poppins max-md:text-[30px] font-bold mb-4">
+        <section className="slider-container container mx-auto mt-10 p-5">
+                <h1 className="text-title text-white text-center font-roboto max-md:text-[30px] font-bold mb-4">
         Отзывы наших клиентов
       </h1>
-      <p className="text-white text-subtitle text-center font-poppins font-semibold mb-4" >Слова, которые говорят сами за себя</p>
+      <p className="text-white text-subtitle text-center font-roboto font-semibold mb-4" >Слова, которые говорят сами за себя</p>
           <Swiper
             breakpoints={{
               340: {
@@ -50,7 +50,7 @@ import Review from './Review';
             ))}
           </Swiper>
           <div className="custom-pagination flex justify-center mt-16"></div>
-        </div>
+        </section>
       );
     };
 

@@ -47,3 +47,10 @@ audio::-webkit-media-controls-panel {
   }
   
 
+.instagram:hover {
+  fill:#fa16ae
+}
+
+.tiktok:hover {
+  fill:#ff3b65
+}

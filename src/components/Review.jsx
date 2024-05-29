@@ -16,7 +16,7 @@ const Review = ({ avatar, name, description }) => {
             color="#FD6F00"
             size={20}
           />
-          <p className="text-lg">{description}</p>
+          <p className="text-lg font-roboto">{description}</p>
           <RiDoubleQuotesR
             className="absolute bottom-0 right-0 mb-1 mr-1"
             color="#FD6F00"
@@ -24,7 +24,7 @@ const Review = ({ avatar, name, description }) => {
           />
         </div>
 
-        <h2 className="text-2xl font-semibold mb-2">{name}</h2>
+        <h2 className="text-2xl font-semibold font-roboto mb-2">{name}</h2>
       </div>
     </div>
   );

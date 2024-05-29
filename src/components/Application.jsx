@@ -12,6 +12,8 @@ const Application = () => {
     const handleSubmit = async (e) => {
         e.preventDefault();
 
+        if(!name.trim() || !phone.trim()) return;
+
         const response = await fetch('/api/submit_form', {
             method: 'POST',
             headers: {
@@ -43,10 +45,10 @@ const Application = () => {
         </p>
         <form onSubmit={handleSubmit} className="flex flex-col ">
           <label className="text-white font-poppins mb-2 text-[21px]" htmlFor="name">Введите имя</label>
-          <input onChange={(e) => setName(e.target.value)} id="name" className="rounded-[20px] bg-transparent border-solid border-2 border-white pl-6 py-4 font-poppins text-white outline-none mb-5" type="text" placeholder="Данияр" value={name} />
+          <input onChange={(e) => setName(e.target.value)} id="name" className="rounded-[20px] bg-transparent border-solid border-2 border-white pl-6 py-4 font-poppins text-white outline-none mb-5" type="text" placeholder="Данияр" value={name} required />
           <label className="text-white font-poppins text-[21px] mb-2 " htmlFor="number">Введите телефон</label>
-          <input onChange={(e) => setPhone(e.target.value)} id="name" className="rounded-[20px] bg-transparent border-solid border-2 border-white pl-6 py-4 font-poppins text-white outline-none" type="text" placeholder="+7(707)123-45-67" value={phone} />
-          <button className="bg-primary font-poppins text-white text-[21px] font-bold rounded-[5px] p-5 mt-10" type="submit">Оставить заявку</button>
+          <input onChange={(e) => setPhone(e.target.value)} id="name" className="rounded-[20px] bg-transparent border-solid border-2 border-white pl-6 py-4 font-poppins text-white outline-none" type="text" placeholder="+7(707)123-45-67" value={phone} required />
+          <button className="bg-primary font-poppins text-white text-[21px] font-bold rounded-[5px] p-5 mt-10 active:shadow-submit active:scale-95" type="submit">Оставить заявку</button>
         </form>
       </div>
     </section>
