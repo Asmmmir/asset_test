@@ -5,15 +5,15 @@ import { FaTiktok, FaInstagram } from "react-icons/fa";
 
 const About = () => {
   return (
-    <section className="flex justify-between max-md:flex-col-reverse container mx-auto p-5 ">
+    <section className="flex justify-between max-md:flex-col-reverse container mx-auto p-5 max-lg:max-w-[100%]">
       <div className="max-w-[706px]">
         <h3 className="font-roboto text-[32px] text-white font-semibold">
           Меня зовут <span className="text-primary">Асет</span>
         </h3>
-        <h1 className="text-[100px] font-roboto font-bold text-white tracking-[0.03em] max-sm:text-[50px]  ">
+        <h1 className="text-[100px] font-roboto font-bold text-white tracking-[0.03em] max-sm:text-[50px] max-lg:text-[70px]  ">
           Музыкант
         </h1>
-        <h1 className="text-[100px] font-roboto font-bold  text-white text-right tracking-[0.03em] max-sm:text-[50px] -mt-12 max-sm:-mt-0 ">
+        <h1 className="text-[100px] font-roboto font-bold  text-white text-right tracking-[0.03em] max-sm:text-[50px] max-lg:text-[70px] -mt-12 max-sm:-mt-0 ">
           Блогер
         </h1>
         <p className="font-roboto text-[21px] font-bold text-white">

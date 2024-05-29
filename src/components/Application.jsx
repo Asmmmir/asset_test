@@ -39,7 +39,7 @@ const Application = () => {
         <h1 className="text-title text-center text-white font-poppins font-semibold mb-[31px]">
           Оставить заявку
         </h1>
-        <p className="text-primary font-semibold text-[24px] text-center mb-[88px]">
+        <p className="text-primary font-semibold text-[24px] max-sm:text-sm text-center mb-[88px]">
           Если у вас возникли какие-либо вопросы, <br /> то можно обратиться ко
           мне
         </p>
@@ -47,7 +47,7 @@ const Application = () => {
           <label className="text-white font-poppins mb-2 text-[21px]" htmlFor="name">Введите имя</label>
           <input onChange={(e) => setName(e.target.value)} id="name" className="rounded-[20px] bg-transparent border-solid border-2 border-white pl-6 py-4 font-poppins text-white outline-none mb-5" type="text" placeholder="Данияр" value={name} required />
           <label className="text-white font-poppins text-[21px] mb-2 " htmlFor="number">Введите телефон</label>
-          <input onChange={(e) => setPhone(e.target.value)} id="name" className="rounded-[20px] bg-transparent border-solid border-2 border-white pl-6 py-4 font-poppins text-white outline-none" type="text" placeholder="+7(707)123-45-67" value={phone} required />
+          <input onChange={(e) => setPhone(e.target.value)} id="name" className="rounded-[20px] bg-transparent border-solid border-2 border-white pl-6 py-4 font-poppins text-white outline-none" type="tel" pattern="7[0-9]{3}[0-9]{3}[0-9]{4}" placeholder="77071234567" value={phone} required />
           <button className="bg-primary font-poppins text-white text-[21px] font-bold rounded-[5px] p-5 mt-10  active:scale-95" type="submit">Оставить заявку</button>
         </form>
       </div>

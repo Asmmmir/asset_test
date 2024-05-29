@@ -4,7 +4,7 @@ import React from 'react'
 import "swiper/css";
 import "swiper/css/pagination";
 import "swiper/css/free-mode";
-import { FreeMode, Pagination } from "swiper/modules";
+import { FreeMode, Pagination, Autoplay } from "swiper/modules";
 import { Swiper, SwiperSlide } from "swiper/react";
 import reviews from '@/constants/reviews';
 import Review from './Review';
@@ -40,7 +40,11 @@ import Review from './Review';
             }}
             loop={true}
             speed={800}
-            modules={[FreeMode, Pagination]}
+            autoplay={{
+              delay:5000,
+              pauseOnMouseEnter:true
+            }}
+            modules={[FreeMode, Pagination, Autoplay]}
             className="swiper-container"
           >
             {reviews.map((item, i) => (
