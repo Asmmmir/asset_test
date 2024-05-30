@@ -537,9 +537,6 @@ video {
 .mt-3{
   margin-top: 0.75rem;
 }
-.mt-12{
-  margin-top: 3rem;
-}
 .flex{
   display: flex;
 }
@@ -804,37 +801,6 @@ audio::-webkit-media-controls-panel {
   fill:#ff3b65
 }
 
-@media (min-width: 1024px){
-  .lg\:container{
-    width: 100%;
-  }
-  @media (min-width: 640px){
-    .lg\:container{
-      max-width: 640px;
-    }
-  }
-  @media (min-width: 768px){
-    .lg\:container{
-      max-width: 768px;
-    }
-  }
-  @media (min-width: 1024px){
-    .lg\:container{
-      max-width: 1024px;
-    }
-  }
-  @media (min-width: 1280px){
-    .lg\:container{
-      max-width: 1280px;
-    }
-  }
-  @media (min-width: 1536px){
-    .lg\:container{
-      max-width: 1536px;
-    }
-  }
-}
-
 .hover\:text-primary:hover{
   --tw-text-opacity: 1;
   color: rgb(253 111 0 / var(--tw-text-opacity));
@@ -847,10 +813,6 @@ audio::-webkit-media-controls-panel {
 }
 
 @media not all and (min-width: 1024px){
-  .max-lg\:mx-0{
-    margin-left: 0px;
-    margin-right: 0px;
-  }
   .max-lg\:max-w-\[100\%\]{
     max-width: 100%;
   }
@@ -875,13 +837,6 @@ audio::-webkit-media-controls-panel {
   .max-md\:text-\[30px\]{
     font-size: 30px;
   }
-  .max-md\:text-\[70px\]{
-    font-size: 70px;
-  }
-  .max-md\:text-sm{
-    font-size: 0.875rem;
-    line-height: 1.25rem;
-  }
 }
 
 @media not all and (min-width: 640px){
@@ -894,19 +849,5 @@ audio::-webkit-media-controls-panel {
   .max-sm\:text-sm{
     font-size: 0.875rem;
     line-height: 1.25rem;
-  }
-}
-
-@media (min-width: 768px){
-  .md\:text-sm{
-    font-size: 0.875rem;
-    line-height: 1.25rem;
-  }
-}
-
-@media (min-width: 1024px){
-  .lg\:mx-0{
-    margin-left: 0px;
-    margin-right: 0px;
   }
 }

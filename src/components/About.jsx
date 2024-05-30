@@ -1,7 +1,8 @@
 import Link from "next/link";
 import React from "react";
 import { FaTiktok, FaInstagram } from "react-icons/fa";
-// import Image from 'next/image'
+import Image from 'next/image'
+import headerImg from '@/images/header-img.png'
 
 const About = () => {
   return (
@@ -28,7 +29,7 @@ const About = () => {
         </p>
       </div>
       <div className="flex justify-center items-center flex-col max-md:mb-5">
-        <img src="/images/header-img.png" alt="" />
+        <Image className="" src={headerImg}  />
         <div>
           <ul className="flex justify-center mt-3 gap-2">
             <li>
