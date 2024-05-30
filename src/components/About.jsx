@@ -33,7 +33,7 @@ const About = () => {
         <div>
           <ul className="flex justify-center mt-3 gap-2">
             <li>
-              <Link href="https://tiktok.com">
+              <Link href="https://www.tiktok.com/@assetyans">
                 <FaTiktok color="white" size={40} className="tiktok"/>
               </Link>
             </li>
