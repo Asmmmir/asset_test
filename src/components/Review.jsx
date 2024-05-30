@@ -1,3 +1,4 @@
+import Image from "next/image";
 import React from "react";
 import { RiDoubleQuotesL } from "react-icons/ri";
 import { RiDoubleQuotesR } from "react-icons/ri";
@@ -5,9 +6,12 @@ import { RiDoubleQuotesR } from "react-icons/ri";
 const Review = ({ avatar, name, description }) => {
   return (
     <div className="card flex items-center justify-between max-md:flex-col max-md:items-start gap-5 h-344 w-1087 bg-white rounded-lg p-6 transition-opacity">
-      <img
-        src={`/images/${avatar}`}
+      <Image
+        src={avatar}
+        width={96}
+        height={96}
         className="avatar rounded-full h-24 w-24 mr-6"
+        alt="Аватарка заказчика"
       />
       <div className="font-poppins flex-1 flex flex-col gap-5">
         <div className="relative">

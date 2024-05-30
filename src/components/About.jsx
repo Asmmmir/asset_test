@@ -29,7 +29,7 @@ const About = () => {
         </p>
       </div>
       <div className="flex justify-center items-center flex-col max-md:mb-5">
-        <Image className="" src={headerImg}  />
+        <Image className="" src={headerImg} alt="Фотография Асета"  />
         <div>
           <ul className="flex justify-center mt-3 gap-2">
             <li>

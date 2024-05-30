@@ -1,3 +1,4 @@
+import Image from "next/image";
 import { useState, useRef } from "react";
 
 const Video = ({ title, subtitle, videoUrl, thumbnail }) => {
@@ -13,16 +14,15 @@ const Video = ({ title, subtitle, videoUrl, thumbnail }) => {
   return (
     <div className="relative mb-5 w-[445px] h-[490px] flex flex-col ">
       {isVideoOpen ? (
-        <video className="w-full h-full object-cover" controls autoPlay onClick={() => setIsVideoOpen((prev) => !prev)} onTouchEnd={() => setIsVideoOpen(false)} onPlay={handlePlay} >
+        <video className="w-full h-full object-cover" git  controls onClick={() => setIsVideoOpen((prev) => !prev)} onTouchEnd={() => setIsVideoOpen(false)} onPlay={handlePlay} >
           <source src={videoUrl} type="video/mp4" />
         </video>
       ) : (
-        <img
-          src={thumbnail}
-          alt="Video Thumbnail"
-          className="w-full h-full object-cover cursor-pointer"
-          onClick={() => setIsVideoOpen(true)}
-        />
+        <Image src={thumbnail}
+        width={445} height={490}
+        alt="Video Thumbnail"
+        className="w-full h-full object-cover cursor-pointer"
+        onClick={() => setIsVideoOpen(true)}  />
       )}
       {!isVideoOpen && (
         <div

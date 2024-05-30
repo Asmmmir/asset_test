@@ -3,6 +3,8 @@
 import React from "react";
 import { useRouter } from "next/navigation";
 import { useState } from "react";
+import Image from "next/image";
+import ApplicationImg from '@/images/application-img.png'
 
 const Application = () => {
     const [name, setName] = useState('');
@@ -41,7 +43,7 @@ const Application = () => {
     return (
         <section className="flex justify-between max-md:flex-col container mx-auto p-5 mt-20 gap-10">
             <div className="flex justify-center items-center">
-                <img src="/images/application-img.png" alt="application image" />
+                <Image src={ApplicationImg} alt="Фотография Асета" />
             </div>
             <div id="contacts" className="flex flex-col">
                 <h1 className="text-title text-center text-white font-poppins font-semibold mb-[31px]">
